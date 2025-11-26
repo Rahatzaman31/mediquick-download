@@ -33,7 +33,7 @@ function scrollToTop() {
 
 async function downloadAPK() {
   try {
-    const response = await fetch('https://files.catbox.moe/4rrayf.apk');
+    const response = await fetch('https://files.catbox.moe/a2hmv1.apk');
     const blob = await response.blob();
     const url = window.URL.createObjectURL(blob);
     const link = document.createElement('a');
@@ -45,7 +45,7 @@ async function downloadAPK() {
     window.URL.revokeObjectURL(url);
   } catch (error) {
     console.error('Download failed:', error);
-    window.open('https://files.catbox.moe/4rrayf.apk', '_blank');
+    window.open('https://files.catbox.moe/a2hmv1.apk', '_blank');
   }
 }
 
